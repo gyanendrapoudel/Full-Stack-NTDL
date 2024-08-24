@@ -1,0 +1,30 @@
+### NOT TODO list API
+@url=http://localhost:8000/api/v1/taskLists
+
+### Get method
+
+GET {{url}}
+
+### Post Method
+
+POST  {{url}}
+Content-Type: application/json
+
+{   
+   "task":"watching movie",
+   "hr":20,
+   "type": "entry"
+}
+
+### Patch Method
+
+PATCH  {{url}}
+Content-Type: application/json
+
+{   "id":"66b57803d5344f9b08daf18a",
+    "type":"entry"
+}
+
+
+### Delete Method
+DELETE {{url}}/66b56c40575f7425a40543f3
