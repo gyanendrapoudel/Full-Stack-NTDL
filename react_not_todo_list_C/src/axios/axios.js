@@ -1,5 +1,7 @@
 import axios from "axios";
-const apiEP = 'http://localhost:8000/api/v1/taskLists'
+const apiEP = import.meta.env.NODE_ENV
+  ? '/api/v1/taskLists'
+  : 'http://localhost:8000/api/v1/taskLists'
 
 const apiRequests = async(method, data)=>{
     try {
