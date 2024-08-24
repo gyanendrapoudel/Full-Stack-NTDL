@@ -1,5 +1,5 @@
 import axios from "axios";
-const apiEP = import.meta.env.NODE_ENV
+const apiEP = import.meta.env.PROD
   ? '/api/v1/taskLists'
   : 'http://localhost:8000/api/v1/taskLists'
 
